@@ -202,7 +202,7 @@ print_install "Membuat direktori xray"
     export IP=$( curl -s https://ipinfo.io/ip/ )
 
 # Change Environment System
-function first_setup(){
+ function first_setup(){
     timedatectl set-timezone Asia/Jakarta
     echo iptables-persistent iptables-persistent/autosave_v4 boolean true | debconf-set-selections
     echo iptables-persistent iptables-persistent/autosave_v6 boolean true | debconf-set-selections
@@ -227,7 +227,6 @@ else
     exit 1
 fi
 }
-
 # GEO PROJECT
 clear
 function nginx_install() {
