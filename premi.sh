@@ -601,9 +601,9 @@ systemctl enable trip
 mkdir -p /usr/local/kyt/
 wget -q -O /usr/local/kyt/udp-mini "${REPO}limit/udp-mini"
 chmod +x /usr/local/kyt/udp-mini
-wget -q -O udp-mini-1.service "${REPO}limit/udp-mini-1.service"
-wget -q -O udp-mini-2.service "${REPO}limit/udp-mini-2.service"
-wget -q -O udp-mini-3.service "${REPO}limit/udp-mini-3.service"
+wget -q ${REPO}limit/udp-mini-1.service"
+wget -q ${REPO}limit/udp-mini-2.service"
+wget -q ${REPO}limit/udp-mini-3.service"
 systemctl disable udp-mini-1
 systemctl stop udp-mini-1
 systemctl enable udp-mini-1
